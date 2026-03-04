@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Menu </title>
+  <link rel="stylesheet" href="styles/menu.css">
+</head>
+
+<body>
+  <section class="hero">
+    <img src="images/menu-background.jpeg" class="hero-img">
+
+    <div class="content">
+
+      <div class="menu-card">
+
+        <a href="describing.html" class="menu-item">
+          <img src="images/describing.jpeg" class="card-img">
+          <div class="card-text">
+            <h2>Describing</h2>
+            <p>How I see you 🌙</p>
+          </div>
+        </a>
+
+        <a href="anology.html" class="menu-item">
+          <img src="images/analogy.jpeg" class="card-img">
+          <div class="card-text">
+            <h2>If you were</h2>
+            <p>What you remind me of ✨</p>
+          </div>
+        </a>
+
+        <a href="message.html" class="menu-item">
+          <img src="images/message.jpeg" class="card-img">
+          <div class="card-text">
+            <h2>Message</h2>
+            <p>A special note for you 💌</p>
+          </div>
+        </a>
+
+
+
+      </div>
+
+    </div>
+  </section>
+
+  <script>
+    document.querySelectorAll("a").forEach(link => {
+      link.addEventListener("click", function (e) {
+        e.preventDefault();
+        document.body.style.opacity = 0;
+        document.body.style.transition = "opacity 0.4s ease";
+        setTimeout(() => {
+          window.location = this.href;
+        }, 400);
+      });
+    });
+  </script>
+
+</body>
+
+</html>

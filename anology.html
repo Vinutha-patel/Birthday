@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Analogy</title>
+  <link rel="stylesheet" href="styles/anology.css">
+</head>
+
+<body>
+
+  <section class="hero">
+    <img src="images/analogy-background.jpeg" class="hero-img">
+
+    <div class="content">
+      <div class="cards-container">
+
+
+        <!-- 1 -->
+        <div class="flip-card effect-1">
+          <div class="flip-inner">
+            <div class="flip-front">
+              <h2>If You Were an Animal</h2>
+              <p>Click to see 🐾</p>
+            </div>
+            <div class="flip-back">
+              <img src="images/cat.jpeg" class="flip-img">
+              <p>You’d be a cat — calm, independent, secretly soft, and friendly only with the people you genuinely like.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- 2 -->
+        <div class="flip-card effect-2">
+          <div class="flip-inner">
+            <div class="flip-front">
+              <h2>If You Were a Time</h2>
+              <p>Tap to reveal </p>
+            </div>
+            <div class="flip-back">
+              <img src="images/time.jpeg" class="flip-img">
+              <p>You’d be a sunrise — the kind that slowly lights up everything around it.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- 3 -->
+        <div class="flip-card effect-3">
+          <div class="flip-inner">
+            <div class="flip-front">
+              <h2>If You Were a Place</h2>
+              <p>Tap to see 🌍</p>
+            </div>
+            <div class="flip-back">
+              <img src="images/place.jpeg" class="flip-img">
+              <p>You’d be the Mountains — strong and grounding. Infinte</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- 4 -->
+        <div class="flip-card effect-4">
+          <div class="flip-inner">
+            <div class="flip-front">
+              <h2>If You Were a Season</h2>
+              <p>Tap 🍂</p>
+            </div>
+            <div class="flip-back">
+              <img src="images/season.jpeg" class="flip-img">
+              <p>You’d be Spring — fresh, warm, and the kind that makes everything feel alive again.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- 5 -->
+        <div class="flip-card effect-5">
+          <div class="flip-inner">
+            <div class="flip-front">
+              <h2>If You Were a Song</h2>
+              <p>Tap 🎶</p>
+            </div>
+            <div class="flip-back">
+              <img src="images/song.jpeg" class="flip-img">
+              <p>Stubborn. Not gonna lie</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- 6 -->
+        <div class="flip-card effect-6">
+          <div class="flip-inner">
+            <div class="flip-front">
+              <h2>If You Were a Color</h2>
+              <p>Tap 🎨</p>
+            </div>
+            <div class="flip-back">
+              <img src="images/color.jpeg" class="flip-img">
+              <p>You’d be Pantone Blue — deep and rare.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- 7 (Emotional) -->
+        <div class="flip-card effect-7">
+          <div class="flip-inner">
+            <div class="flip-front">
+              <h2>If You Were a Feeling</h2>
+              <p>Click slowly 🤍</p>
+            </div>
+            <div class="flip-back">
+              <img src="images/feeling.jpeg" class="flip-img">
+              <p>You’d be Comfort — the kind that feels like home.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="back-wrapper">
+          <a href="menu.html" class="back-btn">← Back to Menu</a>
+        </div>
+
+
+      </div>
+    </div>
+  </section>
+
+  <script>
+    const cards = document.querySelectorAll(".flip-card");
+    cards.forEach(card => {
+      card.addEventListener("click", () => {
+        card.classList.toggle("flipped");
+      });
+    });
+  </script>
+
+</body>
+
+</html>

@@ -1,0 +1,139 @@
+/* ===== RESET ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* ===== FADE IN ===== */
+body {
+  animation: fadeIn 0.8s ease-in-out;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+/* ===== HERO BACKGROUND ===== */
+.hero {
+  position: relative;
+  min-height: 100vh;
+  width: 100%;
+}
+
+.hero-img {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: blur(2px) brightness(70%);
+  z-index: -2;
+}
+
+.hero::after {
+  content: "";
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.4);
+  z-index: -1;
+}
+
+/* ===== CONTENT CENTER ===== */
+.content {
+  display: flex;
+  justify-content: center;
+  padding: 80px 20px;
+}
+
+/* ===== MESSAGE CARD ===== */
+.message-card {
+  max-width: 600px;
+  width: 100%;
+
+  background: rgba(255,255,255,0.08);
+  backdrop-filter: blur(15px);
+
+  border-radius: 25px;
+  padding: 40px 30px;
+
+  border: 1px solid rgba(255,255,255,0.25);
+
+  box-shadow:
+    0 0 30px rgba(0,0,0,0.6),
+    0 0 25px rgba(147,197,253,0.4);
+
+  color: white;
+  line-height: 1.7;
+}
+
+/* ===== TITLE ===== */
+.message-card h1 {
+  font-size: 28px;
+  margin-bottom: 25px;
+  text-align: center;
+  color: #93c5fd;
+}
+
+/* ===== PARAGRAPHS ===== */
+.message-card p {
+  margin-bottom: 18px;
+  font-size: 15px;
+}
+
+/* ===== ENDING ===== */
+.ending {
+  margin-top: 20px;
+  font-weight: 600;
+  text-align: center;
+  color: #cbd5e1;
+}
+
+/* ===== LOVE BUTTON ===== */
+.love-btn {
+  display: block;
+  width: fit-content;
+  margin: 30px auto 0;
+
+  padding: 14px 35px;
+  text-decoration: none;
+  border-radius: 40px;
+
+  font-size: 16px;
+  font-weight: 600;
+  letter-spacing: 1px;
+
+  background: linear-gradient(135deg, #93c5fd, #cbd5e1);
+  color: #0f172a;
+
+  transition: all 0.3s ease;
+  box-shadow: 0 0 15px rgba(147, 197, 253, 0.6);
+}
+/* Hover Effect */
+.love-btn:hover {
+  transform: scale(1.07);
+  box-shadow: 
+    0 0 25px rgba(147, 197, 253, 1),
+    0 0 40px rgba(255,255,255,0.5);
+}
+
+/* Click Effect */
+.love-btn:active {
+  transform: scale(0.96);
+}
+
+/* ===== DESKTOP ===== */
+@media (min-width: 768px) {
+  .message-card {
+    padding: 60px 50px;
+  }
+
+  .message-card h1 {
+    font-size: 36px;
+  }
+
+  .message-card p {
+    font-size: 17px;
+  }
+}

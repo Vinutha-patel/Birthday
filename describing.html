@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Describing</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles/describing.css">
+</head>
+
+<body>
+
+<section class="hero">
+  <img src="images/describing-background.jpeg" class="hero-img">
+
+  <div class="content">
+    <div class="cards-container">
+
+      <!-- 1 -->
+      <div class="flip-card effect-1">
+        <div class="flip-inner">
+          <div class="flip-front">
+            <h2>That Smile</h2>
+            <p>Click to reveal ✨</p>
+          </div>
+          <div class="flip-back">
+            <img src="images/smile.jpeg" class="flip-img">
+            <p>This right here? This is the reason my mood changes in seconds and i forgive you easyly</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- 2 -->
+      <div class="flip-card effect-2">
+        <div class="flip-inner">
+          <div class="flip-front">
+            <h2>Lost in Thought</h2>
+            <p>Tap to reveal 🌙</p>
+          </div>
+          <div class="flip-back">
+            <img src="images/lost.jpeg" class="flip-img">
+            <p>The way you stare into nothing while thinking about everything… it’s attractive.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- 3 -->
+      <div class="flip-card effect-3">
+        <div class="flip-inner">
+          <div class="flip-front">
+            <h2>Effortlessly You</h2>
+            <p>Tap to see ✨</p>
+          </div>
+          <div class="flip-back">
+            <img src="images/effortless.jpeg" class="flip-img">
+            <p>You don’t even put in extra effort.
+But somehow, you always looks the Best. What is the secret</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- 4 -->
+      <div class="flip-card effect-4">
+        <div class="flip-inner">
+          <div class="flip-front">
+            <h2>When You Don’t Notice</h2>
+          </div>
+          <div class="flip-back">
+            <img src="images/notice.jpeg" class="flip-img">
+            <p>The best version of you is when you don’t even know you’re being watched. hayeeeeeeeee</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- 5 -->
+      <div class="flip-card effect-5">
+        <div class="flip-inner">
+          <div class="flip-front">
+            <h2>Baby You</h2>
+          </div>
+          <div class="flip-back">
+            <img src="images/baby.jpeg" class="flip-img">
+            <p>That soft side you don’t show everyone. </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- 6 -->
+      <div class="flip-card effect-6">
+        <div class="flip-inner">
+          <div class="flip-front">
+            <h2>Eyes</h2>
+          </div>
+          <div class="flip-back">
+            <img src="images/eyes.jpeg" class="flip-img">
+            <p>It’s the way they look like they understand more than you say. MY Favorite 😉😘</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- 7 -->
+      <div class="flip-card effect-7">
+        <div class="flip-inner">
+          <div class="flip-front">
+            <h2>That Confidence</h2>
+          </div>
+          <div class="flip-back">
+            <img src="images/confidence.jpeg" class="flip-img">
+            <p>The way you carry yourself… you don’t even realize how powerful that is.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- 8 -->
+      <div class="flip-card effect-8">
+        <div class="flip-inner">
+          <div class="flip-front">
+            <h2>Calm</h2>
+          </div>
+          <div class="flip-back">
+            <img src="images/calm.jpeg" class="flip-img">
+            <p>You don’t rush. You don’t panic.
+You just stay composed  and that says everything..</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- 9
+      <div class="flip-card effect-9">
+        <div class="flip-inner">
+          <div class="flip-front">
+            <h2>Even Like This</h2>
+          </div>
+          <div class="flip-back">
+            <img src="images/annoyed.jpeg" class="flip-img">
+            <p>Even when you’re annoyed… I still think you look perfect.</p>
+          </div>
+        </div>
+      </div> -->
+
+      <!-- 10 FINAL -->
+      <div class="flip-card effect-10">
+        <div class="flip-inner">
+          <div class="flip-front">
+            <h2>Your Favorite 🤍</h2>
+            <p>Click slowly…</p>
+          </div>
+          <div class="flip-back">
+            <img src="images/your.jpeg" class="flip-img">
+            <p>The way you love your people…</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="back-wrapper">
+        <a href="menu.html" class="back-btn">← Back to Menu</a>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<script>
+  const cards = document.querySelectorAll(".flip-card");
+  cards.forEach(card => {
+    card.addEventListener("click", () => {
+      card.classList.toggle("flipped");
+    });
+  });
+</script>
+
+</body>
+</html>
